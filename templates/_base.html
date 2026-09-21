@@ -49,7 +49,7 @@
                         <a href="{% url 'product_list' %}" class="nav-link">Products</a>
                     </li>
                     <li class="nav-item {% if request.resolver_match.url_name == 'blog' %}active{% endif %}">
-                        <a href="" class="nav-link">Blog</a>
+                        <a href="{% url 'blog_list' %}" class="nav-link">Blog</a>
                     </li>
                     <li class="nav-item {% if request.resolver_match.url_name == 'contact' %}active{% endif %}">
                         <a href="{% url 'contact' %}" class="nav-link">Contact</a>
